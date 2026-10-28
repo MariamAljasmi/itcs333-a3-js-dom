@@ -20,7 +20,7 @@ function filterItems(filterType) {
     const items = todoList.querySelectorAll('li');
     items.forEach(li => {
       const isCompleted = li.classList.contains('completed');
-      if (filterType === 'all') {
+      if (filterType === 'all') { 
         li.classList.remove('hidden');
       } else if (filterType === 'active') {
         li.classList.toggle('hidden', isCompleted);
